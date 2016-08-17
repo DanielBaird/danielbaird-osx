@@ -14,10 +14,13 @@ popd
 
 The setup script symlinks the `bin\bash-profile.sh` file into place as your `~/.bash_profile`.
 
-### What else is here
+### What do I get
 
-| file | it's... |
-|------|---------|
+| run | which does... |
+|-----|---------------|
 | `bash-color-vars.sh` | defines `echo`-able variables for bash colours |
 | `show-bash-color-vars.sh` | quick reference to the colour vars defined in `bash-color-vars.sh`|
-
+| `cd..`      | does a `cd ..` (up one dir) |
+| `ll`        | does a `ls -halPF` (detailed ls) |
+| `openports` | does a `lsof -i | grep LISTEN` (showing open ports) |
+| `clean-ds`  | does a `find` on `.DS_Store` files and deletes them |

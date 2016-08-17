@@ -1,5 +1,5 @@
 
-# also grab the .bashrc if there is one
+# grab the .bashrc if there is one
 if [ -f ~/.bashrc ]; then . ~/.bashrc; fi
 
 # bash completions via homebrew package "bash-completion"
@@ -19,7 +19,7 @@ source ~/bin/bash-color-vars.sh
 export PS1='\n${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n❤️  '
 
 # add my path then homebrew's path to the start of path
-export PATH="~/bin:/usr/local/bin:$PATH"
+export PATH="~/.config/danielbaird-osx/bin:/usr/local/bin:$PATH"
 
 # terminal colouring
 export CLICOLOR=1
