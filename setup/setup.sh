@@ -1,1 +1,1 @@
-ln -s ~/.config/bin/bash-profile ~/.bash_profile
+ln -s ~/.config/danielbaird-osx/bin/bash-profile.sh ~/.bash_profile
