@@ -1,6 +1,10 @@
+
+
 # OSX config files
 
-My custom config dir from my standard macOS setup.  If I had more time and/or was smarter, this would be better.
+My custom config dir from my standard macOS setup.  If I had more
+ time and/or was smarter, this would be better.
+
 
 ### Setting up
 
@@ -12,7 +16,9 @@ git clone git@github.com:DanielBaird/danielbaird-osx.git
 popd
 ```
 
-The setup script symlinks the `bin\bash-profile.sh` file into place as your `~/.bash_profile`.
+The setup script symlinks the `bin\bash-profile.sh` file into 
+place as your `~/.bash_profile`.
+
 
 ### What do I get
 
