@@ -1,0 +1,1 @@
+ln -s ~/.config/bin/bash-profile ~/.bash_profile
