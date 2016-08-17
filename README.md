@@ -23,4 +23,4 @@ The setup script symlinks the `bin\bash-profile.sh` file into place as your `~/.
 | `cd..`      | does a `cd ..` (up one dir) |
 | `ll`        | does a `ls -halPF` (detailed ls) |
 | `openports` | does a `lsof -i | grep LISTEN` (showing open ports) |
-| `clean-ds`  | does a `find` on `.DS_Store` files and deletes them |
+| `clean-ds`  | does a `find` on `.DS_Store` files in current dir and below, and deletes them |
