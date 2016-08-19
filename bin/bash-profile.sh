@@ -13,7 +13,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # pull in colours
-source ~/bin/bash-color-vars.sh
+source ~/.config/danielbaird-osx/bin/bash-color-vars.sh
 
 # set up the prompt
 export PS1='\n${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n❤️  '
