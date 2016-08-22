@@ -16,7 +16,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 source ~/.config/danielbaird-osx/bin/bash-color-vars.sh
 
 # set up the prompt
-export PS1='\n${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n❤️  '
+export PS1='\n${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n ❤️  '
 
 # add my path then homebrew's path to the start of path
 export PATH="~/.config/danielbaird-osx/bin:/usr/local/bin:$PATH"
