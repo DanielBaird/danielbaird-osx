@@ -16,12 +16,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 source ~/.config/danielbaird-osx/bin/bash-color-vars.sh
 
 # set up the prompt
-# the unicode char messes with bash's ability to understand how
-# many character widths were printed, so the tput commands
-# remember the character pos, write two spaces, then reset to the 
-# previous position and output the unicode char over the two
-# spaces.
-export PS1='\n${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n \[`tput sc`\]  \[`tput rc`\]❤️  '
+export PS1='\n${RED} ❤  ${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n ️$ '
 
 # add my path then homebrew's path to the start of path
 export PATH="~/.config/danielbaird-osx/bin:/usr/local/bin:$PATH"
