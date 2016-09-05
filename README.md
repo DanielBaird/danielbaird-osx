@@ -2,8 +2,8 @@
 
 # OSX config files
 
-My custom config dir from my standard macOS setup.  If I had more
- time and/or was smarter, this would be better.
+My custom config dir from my standard macOS setup.  If [I had more
+ time](http://quoteinvestigator.com/2012/04/28/shorter-letter/) and/or was smarter, this would be better...
 
 
 ### Setting up
