@@ -1,0 +1,29 @@
+Host *
+	ServerAliveInterval 300
+	ServerAliveCountMax 3
+
+Host smith-er
+	Hostname smith.hpc.jcu.edu.au
+	User research-projects
+
+Host smith-rdsi
+	Hostname smith.hpc.jcu.edu.au
+	User rdsi
+
+Host rdsi-geo1
+	Hostname rdsi-geo1.hpc.jcu.edu.au
+	ProxyCommand ssh smith -W %h:%p
+	User root
+
+Host rdsi-thredds1
+	Hostname rdsi-thredds1.hpc.jcu.edu.au
+	ProxyCommand ssh smith -W %h:%p
+	User root
+
+Host connectedurbantropics.org
+	Hostname 43.240.98.121
+	User ubuntu
+
+Host plenario
+	Hostname 43.240.99.26
+	User ubuntu
