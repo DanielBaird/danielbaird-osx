@@ -16,8 +16,12 @@ git clone git@github.com:DanielBaird/danielbaird-osx.git
 popd
 ```
 
-The setup script symlinks the `bin\bash-profile.sh` file into 
-place as your `~/.bash_profile`.
+The setup script symlinks these files into place:
+
+| file                    | symlinked to...
+|-------------------------|-----------------
+| `bin\bash-profile.sh`   | `~/.bash_profile`
+| `ssh\config`            | `~/.ssh/config`
 
 
 ### What do I get
