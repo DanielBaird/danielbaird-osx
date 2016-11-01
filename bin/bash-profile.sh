@@ -48,3 +48,4 @@ alias ll="ls -halpF"
 
 alias openports="lsof -i | grep LISTEN"
 alias clean-ds="find . -type f -name '*.DS_Store' -ls -delete"
+alias wget-mirror='wget --no-parent --no-check-certificate --html-extension --convert-links --restrict-file-names=windows --recursive --level=inf --page-requisites -e robots=off --wait=0 --quota=inf'
