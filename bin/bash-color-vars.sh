@@ -1,4 +1,4 @@
- RESTORE=$(echo -en "\033[0m")
+ RESTORE=$(echo -en "\033[m")
      RED=$(echo -en "\033[00;31m")
    GREEN=$(echo -en "\033[00;32m")
   YELLOW=$(echo -en "\033[00;33m")
