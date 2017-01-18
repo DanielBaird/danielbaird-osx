@@ -19,7 +19,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 source ~/.config/danielbaird-osx/bin/bash-color-vars.sh
 
 # set up the prompt
-export PS1="\n╭ ${RED}♥ ${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}$(__git_ps1)\n╰ $ "
+export PS1="\n╭  ${RED}♥ ${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}\$(__git_ps1)\n╰  $ "
 # export PS1="\n${RED}♥ ${GREY}\@  ${CYAN}\u  ${GREY}@  ${RED}\h  ${GREY}in  ${GREEN}\w ${RESTORE}\n$ "
 # export PS1="\n\[${RED}\] <3  \[${GREY}\]\@  \[${CYAN}\]\u  \[${GREY}\]@  \[${RED}\]\h  \[${GREY}\]in  \[${GREEN}\]\w \[${RESTORE}\]\n ️$ "
 # export PS1="\n<3  \@  \u  @  \h  in  \w \n$ "
