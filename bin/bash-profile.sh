@@ -51,6 +51,7 @@ EOT
 
 alias cd..="cd .."
 alias ll="ls -halpF"
+alias grepr="grep -r"
 
 alias openports="lsof -i | grep LISTEN"
 alias clean-ds="find . -type f -name '*.DS_Store' -ls -delete"

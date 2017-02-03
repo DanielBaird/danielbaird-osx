@@ -22,6 +22,7 @@ The setup script symlinks these files into place:
 |-------------------------|-----------------
 | `bin\bash-profile.sh`   | `~/.bash_profile`
 | `ssh\config`            | `~/.ssh/config`
+| `config-dir\*`          | `~/.config/*`
 
 
 ### What do I get
@@ -36,4 +37,4 @@ The setup script symlinks these files into place:
 | `openports` | does a `lsof -i | grep LISTEN` (showing open ports)
 | `clean-ds`  | does a `find` on `.DS_Store` files in current dir and below, and deletes them
 | `gron`      | greps JSON (see https://github.com/tomnomnom/gron for more)
-
+| `grepr`     | does a `grep -r` (recursive grep)

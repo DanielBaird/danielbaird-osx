@@ -27,7 +27,7 @@ if [ -e ~/.bash_profile ]; then
         rm ~/.bash_profile
     fi
 fi
-ln -s ~/.config/danielbaird-osx/bin/bash-profile.sh ~/.bash_profile && reassure "link new .bash_profile"
+ln -s ~/.config/danielbaird-osx/bin/bash-profile.sh ~/.bash_profile && reassure "linked new .bash_profile"
 
 # link in ~/.ssh/config -------------------------------------------------------
 if [ -e ~/.ssh/config ]; then
@@ -38,7 +38,7 @@ if [ -e ~/.ssh/config ]; then
         rm ~/.ssh/config
     fi
 fi
-ln -s ~/.config/danielbaird-osx/ssh/config ~/.ssh/config && reassure "link new .ssh/config"
+ln -s ~/.config/danielbaird-osx/ssh/config ~/.ssh/config && reassure "linked new .ssh/config"
 
 # link in all the .config directories -----------------------------------------
 pushd ~/.config/danielbaird-osx/config-dir > /dev/null
@@ -51,7 +51,7 @@ for CFGDIR in *; do
             rm "$HOME/.config/$CFGDIR"
         fi
     fi
-    ln -s "$HOME/.config/danielbaird-osx/config-dir/$CFGDIR" "$HOME/.config/$CFGDIR" && reassure "link new $CFGDIR config"
+    ln -s "$HOME/.config/danielbaird-osx/config-dir/$CFGDIR" "$HOME/.config/$CFGDIR" && reassure "linked new $CFGDIR config"
 done
 popd > /dev/null
 
@@ -70,7 +70,7 @@ else
         reassure "install Xcode commandline tools"
     fi
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    reassure "install homebrew"
+    reassure "installed homebrew"
 fi
 
 # run all the scripts in setup/scripts ----------------------------------------
