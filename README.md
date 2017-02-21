@@ -11,7 +11,7 @@ My custom config dir from my standard macOS setup.  If [I had more
 ```
 mkdir -p ~/.config
 pushd ~/.config
-git clone git@github.com:DanielBaird/danielbaird-osx.git
+git clone https://github.com/DanielBaird/danielbaird-osx.git
 ~/.config/danielbaird-osx/setup/setup.sh
 popd
 ```
