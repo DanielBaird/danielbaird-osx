@@ -10,8 +10,8 @@ My custom config dir from my standard macOS setup.  If [I had more
 
 When you run the `git` command below, you'll be prompted to install Xcode Command 
 Line Tools, which you should agree to (don't get "full" Xcode unless you want it).
-If that doesn't work for some reason &emdash; e.g. if you're at JCU and their update
-server doesn't have it &emdash; then go to https://developer.apple.com/download/more/, 
+If that doesn't work for some reason &mdash; e.g. if you're at JCU and their update
+server doesn't have it &mdash; then go to https://developer.apple.com/download/more/, 
 find the lastest version of Command Line Tools, and download and install it.
 
 ```
