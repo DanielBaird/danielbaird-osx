@@ -23,4 +23,4 @@ cask-ensure-installed skype
 add-to-dock /Applications/Skype.app
 
 cask-ensure-installed spectacle
-open /Applications/Spectacle
+open /Applications/Spectacle.app
