@@ -61,7 +61,7 @@ if commandexists brew; then
     reassure "update homebrew"
 else
     if commandexists gcc; then
-        reassure "Xcode commandline tools already intalled"
+        reassure "Xcode commandline tools already installed"
     else
         declare "Installing the Xcode command line tools requies some GUI interaction."
         declare "Click 'Install' on the forthcoming alert box."
