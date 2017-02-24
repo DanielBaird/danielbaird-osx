@@ -1,4 +1,5 @@
 Host *
+	IndentityFile ~/.ssh/id_rsa
 	UseKeychain yes
 	AddKeysToAgent yes
 	ServerAliveInterval 300

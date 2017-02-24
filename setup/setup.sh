@@ -74,12 +74,36 @@ else
 fi
 
 # run all the scripts in setup/scripts ----------------------------------------
-pushd ~/.config/danielbaird-osx/setup/scripts > /dev/null
-for SCRIPT in *.sh; do
-    if [ -f $SCRIPT -a -x $SCRIPT ]; then
-        "$HOME/.config/danielbaird-osx/setup/scripts/$SCRIPT"
-        echo
-        reassure "`echo \"${SCRIPT//-/ }\" | sed 's/\.sh$//'`"
-    fi
-done
-popd > /dev/null
+demand "Run additional setup scripts (y/n)? "
+echo    # move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    pushd ~/.config/danielbaird-osx/setup/scripts > /dev/null
+    for SCRIPT in *.sh; do
+        if [ -f $SCRIPT -a -x $SCRIPT ]; then
+            "$HOME/.config/danielbaird-osx/setup/scripts/$SCRIPT"
+            echo
+            reassure "`echo \"${SCRIPT//-/ }\" | sed 's/\.sh$//'`"
+        fi
+    done
+    popd > /dev/null
+fi
+
+# run all the install scripts in setup/installers -----------------------------
+demand "Install applications (y/n)? "
+echo    # move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    pushd ~/.config/danielbaird-osx/setup/installers > /dev/null
+    for INSTALLER in *.sh; do
+        if [ -f $INSTALLER -a -x $INSTALLER ]; then
+            "$HOME/.config/danielbaird-osx/setup/installers/$INSTALLER"
+            echo
+            reassure "`echo \"${INSTALLER//-/ }\" | sed 's/\.sh$//'`"
+        fi
+    done
+    popd > /dev/null
+fi
+
+
+
