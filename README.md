@@ -33,6 +33,9 @@ The setup script symlinks these files into place:
 
 ### What do I get
 
+
+##### Command line aliases
+
 | run | which does... |
 |-----|---------------|
 | `bash-color-vars.sh` | defines `echo`-able variables for bash colours
@@ -42,5 +45,42 @@ The setup script symlinks these files into place:
 | `cdf`       | `cd`s to the dir showing in the front-most Finder window
 | `openports` | does a `lsof -i | grep LISTEN` (showing open ports)
 | `clean-ds`  | does a `find` on `.DS_Store` files in current dir and below, and deletes them
-| `gron`      | greps JSON (see https://github.com/tomnomnom/gron for more)
 | `grepr`     | does a `grep -r` (recursive grep)
+| `` |
+
+
+
+##### Command line programs
+
+| tool    | which does... |
+|---------|---------------|
+| `git`   | version control
+| xcode command line tools | compilers and whatnot
+| `brew`  | package management ( http://brew.sh)
+| `gron`  | greps JSON (see https://github.com/tomnomnom/gron for more)
+| `entr`  | run stuff when the file system changes (https://http://entrproject.org/)
+| `wget`  | fetches web pages, like `curl` but I prefer this
+| `htop`  | live monitoring of processes, like `top` but shows CPU cores
+| `watch` | repeatedly do something, show the result
+| `` |
+
+
+
+##### GUI applications
+
+| app           | which does... |
+|---------------|---------------|
+| Dropbox       | remote file syncing
+| Google Drive  | remote file syncing
+| Sublime Text  | text editor
+| Keeping You Awake | prevents Mac from sleeping 
+| Itsycal       | I used it to replace the clock in the menu bar
+| Spotify       | Streaming music
+| VLC           | Video playback
+| Slack         |  Chat rooms for work
+| Skype         | Video conferencing
+| Spectacle     | Key-based window layout (since Window Tidy went commercial)
+| Firefox       | Web browser
+| Google Chrome | Web browser
+|  |
+

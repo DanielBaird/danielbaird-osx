@@ -20,7 +20,7 @@ function commandexists {
 }
 # link in ~/.bash-profile -----------------------------------------------------
 if [ -e ~/.bash_profile ]; then
-    demand "Remove existing .bash_profile (y/n)? "
+    demand "QUESTION 1 OF 5 :: Remove existing .bash_profile (y/n)? "
     echo    # move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
@@ -31,7 +31,7 @@ ln -s ~/.config/danielbaird-osx/bin/bash-profile.sh ~/.bash_profile && reassure 
 
 # link in ~/.ssh/config -------------------------------------------------------
 if [ -e ~/.ssh/config ]; then
-    demand "Remove existing .ssh/config (y/n)? "
+    demand "QUESTION 2 OF 5 :: Remove existing .ssh/config (y/n)? "
     echo    # move to a new line
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
@@ -44,7 +44,7 @@ ln -s ~/.config/danielbaird-osx/ssh/config ~/.ssh/config && reassure "linked new
 pushd ~/.config/danielbaird-osx/config-dir > /dev/null
 for CFGDIR in *; do
     if [ -e "$HOME/.config/$CFGDIR" ]; then
-        demand "Remove existing .config/$CFGDIR (y/n)? "
+        demand "    QUESTION 2.?? :: Remove existing .config/$CFGDIR (y/n)? "
         echo    # move to a new line
         if [[ $REPLY =~ ^[Yy]$ ]]
         then
@@ -57,8 +57,9 @@ popd > /dev/null
 
 # install homebrew ------------------------------------------------------------
 if commandexists brew; then
+    declare "updating homebrew, this may take several minutes"
     brew update
-    reassure "update homebrew"
+    reassure "updated homebrew"
 else
     if commandexists gcc; then
         reassure "Xcode commandline tools already installed"
@@ -74,7 +75,7 @@ else
 fi
 
 # run all the scripts in setup/scripts ----------------------------------------
-demand "Run additional setup scripts (y/n)? "
+demand "QUESTION 3 OF 5 :: Run additional setup scripts (y/n)? "
 echo    # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -89,15 +90,31 @@ then
     popd > /dev/null
 fi
 
-# run all the install scripts in setup/installers -----------------------------
-demand "Install applications (y/n)? "
+# run all the scripts in setup/cmdline-installers -----------------------------
+demand "QUESTION 4 OF 5 :: Install command line applications (y/n)? "
 echo    # move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    pushd ~/.config/danielbaird-osx/setup/installers > /dev/null
+    pushd ~/.config/danielbaird-osx/setup/cmdline-installers > /dev/null
     for INSTALLER in *.sh; do
         if [ -f $INSTALLER -a -x $INSTALLER ]; then
-            "$HOME/.config/danielbaird-osx/setup/installers/$INSTALLER"
+            "$HOME/.config/danielbaird-osx/setup/cmdline-installers/$INSTALLER"
+            echo
+            reassure "`echo \"${INSTALLER//-/ }\" | sed 's/\.sh$//'`"
+        fi
+    done
+    popd > /dev/null
+fi
+
+# run all the install scripts in setup/gui-installers --------------------------
+demand "QUESTION 5 OF 5 :: Install graphical applications (y/n)? "
+echo    # move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    pushd ~/.config/danielbaird-osx/setup/gui-installers > /dev/null
+    for INSTALLER in *.sh; do
+        if [ -f $INSTALLER -a -x $INSTALLER ]; then
+            "$HOME/.config/danielbaird-osx/setup/gui-installers/$INSTALLER"
             echo
             reassure "`echo \"${INSTALLER//-/ }\" | sed 's/\.sh$//'`"
         fi
