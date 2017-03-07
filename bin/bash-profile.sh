@@ -48,6 +48,9 @@ EOT
     cd "$currFolderPath"
 }
 
+# switch on directory-based environment management
+eval "$(direnv hook bash)"
+echo "direnv is enabled; run  direnv allow <dir>  to enable for <dir>."
 
 alias cd..="cd .."
 alias ll="ls -halpF"

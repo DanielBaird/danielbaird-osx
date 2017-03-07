@@ -7,11 +7,11 @@ function declare {
 }
 function demand {
   # ask the user for a y/n to progress
-    read -p "${PREFIX} ${YELLOW}► $1${RESTORE}" -n 1 -r
+    read -p "${PREFIX} ${YELLOW}►  $1${RESTORE}" -n 1 -r
 }
 function reassure {
     # tell the user something, with a tick at the start
-    echo "${PREFIX} ${YELLOW}${GREEN}✓${YELLOW} $1${RESTORE}"
+    echo "${PREFIX} ${YELLOW}${GREEN}✓${YELLOW}  $1${RESTORE}"
     echo
 }
 function commandexists {
