@@ -56,12 +56,14 @@ The setup script symlinks these files into place:
 |---------|---------------|
 | `git`   | version control
 | xcode command line tools | compilers and whatnot
-| `brew`  | package management ( http://brew.sh)
-| `gron`  | greps JSON (see https://github.com/tomnomnom/gron for more)
-| `entr`  | run stuff when the file system changes (https://http://entrproject.org/)
+| `brew`  | package management http://brew.sh
+| `gron`  | greps JSON https://github.com/tomnomnom/gron
+| `entr`  | run stuff when the file system changes https://http://entrproject.org/
 | `wget`  | fetches web pages, like `curl` but I prefer this
 | `htop`  | live monitoring of processes, like `top` but shows CPU cores
 | `watch` | repeatedly do something, show the result
+| `graphviz` (`dot` etc) | graph-drawing tool http://www.graphviz.org/
+| `direnv` | per-directory env management https://direnv.net/
 | `` |
 
 

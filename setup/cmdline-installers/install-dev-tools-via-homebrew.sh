@@ -1,2 +1,2 @@
-brew install git entr
+brew install git entr gron direnv
 brew upgrade
