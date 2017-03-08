@@ -25,7 +25,7 @@ export PS1="\n╭  ${RED}♥ ${GREY}\@ ${CYAN}\u${GREY} @ ${RED}\h ${GREY}in ${G
 # export PS1="\n<3  \@  \u  @  \h  in  \w \n$ "
 
 # add my path then homebrew's path to the start of path
-export PATH="~/.config/danielbaird-osx/bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.config/danielbaird-osx/bin:/usr/local/bin:$PATH"
 
 # terminal colouring
 export CLICOLOR=1
