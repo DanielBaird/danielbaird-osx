@@ -34,12 +34,13 @@ The setup script symlinks these files into place:
 ### What do I get
 
 
-##### Command line aliases
+##### Command line aliases and scripts
 
 | run | which does... |
 |-----|---------------|
-| `bash-color-vars.sh` | defines `echo`-able variables for bash colours
+| `bash-color-vars.sh`      | defines `echo`-able variables for bash colours
 | `show-bash-color-vars.sh` | quick reference to the colour vars defined in `bash-color-vars.sh`
+| `remove-bom.sh`           | removes the Byte Order Mark from a file, if it has one
 | `cd..`      | does a `cd ..` (up one dir)
 | `ll`        | does a `ls -halPF` (detailed ls)
 | `cdf`       | `cd`s to the dir showing in the front-most Finder window
