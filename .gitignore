@@ -1,0 +1,4 @@
+
+# bash-profile just source-s bash-profile-content.sh
+#
+bin/bash-profile.sh
