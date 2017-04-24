@@ -5,6 +5,17 @@ Host *
 	ServerAliveInterval 300
 	ServerAliveCountMax 3
 
+Host climas
+    Hostname climas.hpc.jcu.edu.au
+    User eresearch
+
+Host climas-root
+    Hostname climas.hpc.jcu.edu.au
+    User root
+
+Host hpc
+	Hostname zodiac.hpc.jcu.edu.au
+
 Host smith-er
 	Hostname smith.hpc.jcu.edu.au
 	User research-projects
