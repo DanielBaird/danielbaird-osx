@@ -1,17 +1,20 @@
+
+# default settings that ALWAYS apply
+#
+# (overridable defaults should go at the bottom 
+# of this file)
+
 Host *
-	IdentityFile ~/.ssh/id_rsa
-	UseKeychain yes
-	AddKeysToAgent yes
 	ServerAliveInterval 300
 	ServerAliveCountMax 3
 
-Host climas
-    Hostname climas.hpc.jcu.edu.au
-    User eresearch
+# ===============================================
 
-Host climas-root
-    Hostname climas.hpc.jcu.edu.au
-    User root
+# --- General eR and JCU machines ---
+
+Host spatialecology
+	Hostname spatialecology.jcu.edu.au
+	User ctbccr
 
 Host hpc
 	Hostname zodiac.hpc.jcu.edu.au
@@ -23,6 +26,16 @@ Host smith-er
 Host smith-rdsi
 	Hostname smith.hpc.jcu.edu.au
 	User rdsi
+
+# --- Specific projects ---
+
+Host climas
+    Hostname climas.hpc.jcu.edu.au
+    User eresearch
+
+Host climas-root
+    Hostname climas.hpc.jcu.edu.au
+    User root
 
 Host rdsi-geo1
 	Hostname rdsi-geo1.hpc.jcu.edu.au
@@ -41,3 +54,13 @@ Host connectedurbantropics.org
 Host plenario
 	Hostname 43.240.99.26
 	User ubuntu
+
+# ===============================================
+
+# overridable settings that get applied only if 
+# not already specified in a section above
+
+Host *
+	IdentityFile ~/.ssh/id_rsa
+	UseKeychain yes
+	AddKeysToAgent yes
