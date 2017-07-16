@@ -49,12 +49,31 @@ EOT
 eval "$(direnv hook bash)"
 echo "direnv is enabled; run  direnv allow <dir>  to enable for <dir>."
 
+# lazy cd-up-one
 alias cd..="cd .."
+
+# better ls
 alias ll="ls -halpF"
+
+# grep recursively through subdirs
 alias grepr="grep -r"
 
+# what servers are running
 alias openports="lsof -i | grep LISTEN"
+
+# remove .DS_Store files from here down
 alias clean-ds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# fetch a whole website
 alias wget-mirror='wget --no-parent --no-check-certificate --html-extension --convert-links --restrict-file-names=windows --recursive --level=inf --page-requisites -e robots=off --wait=0 --quota=inf'
 
+# terse list of git commits
 alias gitlog="git log --oneline -16"
+
+# what aliases are defined in my ssh config
+alias sshaliases="grep -w -i 'Host' ~/.ssh/config | sed 's/Host //' | grep -v '\*' "
+
+
+
+
+
