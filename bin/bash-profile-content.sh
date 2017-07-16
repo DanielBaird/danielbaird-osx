@@ -45,6 +45,7 @@ EOT
 }
 
 # switch on directory-based environment management
+# this needs to be after stuff that affects the command prompt like git-prompt
 eval "$(direnv hook bash)"
 echo "direnv is enabled; run  direnv allow <dir>  to enable for <dir>."
 
