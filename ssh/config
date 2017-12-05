@@ -10,7 +10,7 @@ Host *
 
 # ===============================================
 
-# --- General eR and JCU machines ---
+# ----- General eR and JCU machines -----
 
 Host spatialecology
 	Hostname spatialecology.jcu.edu.au
@@ -19,7 +19,7 @@ Host spatialecology
 Host hpc
 	Hostname zodiac.hpc.jcu.edu.au
 
-Host smith-er
+Host smith-rp
 	Hostname smith.hpc.jcu.edu.au
 	User research-projects
 
@@ -27,15 +27,38 @@ Host smith-rdsi
 	Hostname smith.hpc.jcu.edu.au
 	User rdsi
 
-# --- Specific projects ---
+
+# ----- Specific projects -----
+
+# wallace
+
+Host wallace-maps
+	Hostname wallace-maps.hpc.jcu.edu.au
+	User root
+
+Host wallace
+	Hostname wallace.hpc.jcu.edu.au
+	User root
+
+
+# climas
 
 Host climas
     Hostname climas.hpc.jcu.edu.au
+    Port 8822
     User eresearch
 
 Host climas-root
     Hostname climas.hpc.jcu.edu.au
+    Port 8822
     User root
+
+Host climas-mapserver
+    Hostname climas-mapserver.hpc.jcu.edu.au
+    User root
+
+
+# rdsi marine
 
 Host rdsi-geo1
 	Hostname rdsi-geo1.hpc.jcu.edu.au
@@ -46,6 +69,9 @@ Host rdsi-thredds1
 	Hostname rdsi-thredds1.hpc.jcu.edu.au
 	ProxyCommand ssh smith -W %h:%p
 	User root
+
+
+# various projects
 
 Host connectedurbantropics.org
 	Hostname 43.240.98.121
