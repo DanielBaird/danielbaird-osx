@@ -1,4 +1,13 @@
 
 [user]
-name = Daniel Baird
-email = daniel@danielbaird.com
+	name = Daniel Baird
+	email = daniel@danielbaird.com
+[color]
+	ui = auto
+[core]
+	editor = nano -w
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
