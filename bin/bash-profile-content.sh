@@ -9,6 +9,16 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     $(brew --prefix)/etc/bash_completion
 fi
 
+# bash history tweaks
+
+# append to history file
+shopt -s histappend
+# ignore repeated commands
+HISTCONTROL=ignoredups
+# always ignore boring stuff like ls
+HISTIGNORE='ls:ll:pwd:git status:fg:bg:history'
+
+
 # git bash completion and prompt info
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
