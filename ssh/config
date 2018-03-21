@@ -30,6 +30,20 @@ Host smith-rdsi
 
 # ----- Specific projects -----
 
+# credit calculator
+
+Host getcredit
+	Hostname getcreditprd01.dc.jcu.edu.au
+
+
+# Self Assessment Tool 5P project
+
+Host sat5p
+	Hostname 203.101.226.29
+	User ec2-user
+	IdentityFile ~/.ssh/nectarkey
+
+
 # wallace
 
 Host wallace-maps
