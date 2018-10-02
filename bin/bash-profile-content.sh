@@ -83,6 +83,13 @@ alias gitlog="git log --oneline -16"
 # what aliases are defined in my ssh config
 alias sshaliases="grep -w -i 'Host' ~/.ssh/config | sed 's/Host //' | grep -v '\*' "
 
+# use title NewTitle to set a new title for your terminal tab
+function title() {
+    echo -n -e "\033]0;$1\007"
+}
+
+# grep through ~/.ssh/config and list the host aliases
+alias catssh="cat ~/.ssh/config | grep '^Host ' | awk '{print $2}' | tr '\r' '\n'"
 
 
 
